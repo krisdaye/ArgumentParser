@@ -1,0 +1,31 @@
+<arguments>
+	<argument>
+		<name>length</name>
+		<type>float</type>
+		<required/> <!-- This can mean that required == true. -->
+		<description>length of the box</description>
+	</argument>
+	
+	<argument>
+		<name>width</name>
+		<type>float</type>
+		<required/>
+		<description>width of the box</description>
+	</argument>
+	
+	<argument>
+		<name>height</name>
+		<type>float</type>
+		<required/>
+		<description>height of the box</description>
+	</argument>
+	
+	<optionalArgument>
+		<name>type</name>
+		<type>string</type>
+		<description>Type of shape</description>
+		<value>box</value>
+		<shortName>t</shortName>
+	</optionalArgument>
+	
+</arguments>

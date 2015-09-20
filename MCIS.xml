@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arguments>
+	<optionalArgument>
+		<name>help</name>
+		<numValues>0</numValues>
+		<type>Boolean</type>
+		<description></description>
+		<value>null</value>
+		<shortName>h</shortName>
+	</optionalArgument>
+</arguments>

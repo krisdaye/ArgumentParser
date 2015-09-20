@@ -1,0 +1,53 @@
+<arguments>
+	<argument>
+		<name>length</name>
+		<type>float</type>
+		<description>length of the box</description>
+	</argument>
+	
+	<argument>
+		<name>width</name>
+		<type>integer</type>
+		<description>width of the box</description>
+	</argument>
+	
+	<argument>
+		<name>height</name>
+		<type>string</type>
+		<description>height of the box</description>
+	</argument>
+	
+	<argument>
+		<name>booleanTest</name>
+		<type>boolean</type>
+		<description>height of the box</description>
+	</argument>
+	
+	<optionalArgument>
+		<name>type</name>
+		<numValues>1</numValues>
+		<type>string</type>
+		<description>Type of shape</description>
+		<value>box</value>
+		<shortName>t</shortName>
+	</optionalArgument>
+	
+	<optionalArgument>
+		<name>int</name>
+		<numValues>1</numValues>
+		<type>integer</type>
+		<description>Type of shape</description>
+		<value>box</value>
+		<shortName>t</shortName>
+	</optionalArgument>
+	
+	<optionalArgument>
+		<name>float</name>
+		<numValues>1</numValues>
+		<type>float</type>
+		<description>Type of shape</description>
+		<value>box</value>
+		<shortName>t</shortName>
+	</optionalArgument>
+	
+</arguments>
