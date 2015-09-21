@@ -35,8 +35,8 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 
 ###Requirements
 ----------
--A *[JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) is required
--Gradle
+- A *[JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)* is required
+- Gradle
 
 
 ###Tools
@@ -44,11 +44,11 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 
 **The following are the tools used in creation of this library.**
 
--**Gradle**: Build Tool
--**Git**: Version Control Software
--**JUnit**: Java Unit Testing software
--**JaCoCo**: Acceptance Testing Software
--**Javadoc**: For creating the ArgumentParser API
+- **Gradle**: Build Tool
+- **Git**: Version Control Software
+- **JUnit**: Java Unit Testing software
+- **JaCoCo**: Acceptance Testing Software
+- **Javadoc**: For creating the ArgumentParser API
 
 
 ###Features
