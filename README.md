@@ -219,7 +219,8 @@ The files in the root folder, the folders need to remain, are optional and
 were left for examples on using the various features of the library. 
 The import used from a fresh copy of Argument Parser is:  
 '''  
-import edu.jsu.mcis.*;
+import edu.jsu.mcis.*;  
+
 '''  
 
-*[Gradle User Guide](https://docs.gradle.org/current/userguide/userguide_single.html)
+[Gradle User Guide](https://docs.gradle.org/current/userguide/userguide_single.html)
