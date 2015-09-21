@@ -67,11 +67,11 @@ Implemented the Scrum methodology of Agile.
 	
 	Example: 
 	
-	'''  
+	  
 	parser.addArgument("length", CommandLineArgument.DataType.Integer);  
 	parser.setDescription("length", "the length of the box");
 	
-	'''
+	
 	
 	*If an argument is instantiated without a data type, the data type is defaulted to String.*
 	
@@ -128,10 +128,10 @@ Implemented the Scrum methodology of Agile.
 	
 	Here is an example of setting a short name for an optional argument:
 	
-	'''  
+	  
 	parser.setShortOption("type", "t");
 	
-	'''
+	
 	
 	*All optional arguments, other than help, can be assigned any short name that has not been assigned already.*
 	
@@ -143,10 +143,10 @@ Implemented the Scrum methodology of Agile.
 	requires the optional argument "--type" to be present in order to know what shape
 	it is calculating the volume of. This is done by the setRequired() method.  
 	
-	'''  
+	  
 	parser.setRequired("type");  
 	
-	'''
+	
 	
 	*ArgumentParser assumes that all positional arguments are required, and therefore they do not need to be set as required.*
 	
@@ -158,10 +158,10 @@ Implemented the Scrum methodology of Agile.
 	that are accepted. Multiple values can be set as the restricted values. These
 	values will need to be separated by commas.  
 	
-	'''  
+	  
 	parser.setRestricted("length", 6, 4);  
 	
-	'''
+	
 	
 	
 7.  **Default Values**
@@ -181,10 +181,10 @@ Implemented the Scrum methodology of Agile.
 	Note: the file must be in the root directory for it to be read in.
 	
 	Here is an example on reading in an XML file:  
-	'''  
+	  
 	ArgumentParser parser = XMLParser.createArgumentParser("arguments.xml");
 	
-	'''
+	
 	
 	The XML parser will use the tags to parse the arguments into the program. 
 	If proper format is not followed an exception will be thrown and the program
@@ -198,10 +198,10 @@ Implemented the Scrum methodology of Agile.
 	
 	To save to a file:  
 	
-	'''  
+	  
 	XMLParser.saveXMLFile("filename.xml");
 	
-	'''
+	
 	
 9.  **Javadoc API**
 
@@ -218,9 +218,9 @@ repository on your machine. Once there, use Gradle to build the repository.
 The files in the root folder, the folders need to remain, are optional and
 were left for examples on using the various features of the library. 
 The import used from a fresh copy of Argument Parser is:  
-'''  
+  
 import edu.jsu.mcis.*;  
 
-'''  
+  
 
 [Gradle User Guide](https://docs.gradle.org/current/userguide/userguide_single.html)
