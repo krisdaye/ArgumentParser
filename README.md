@@ -61,7 +61,8 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	example, would be done by calling a simple function "addArgument." 
 	*All of the functions are listed and documented in the API.*
 	
-	Example:
+	Example: 
+	
 	'''
 	parser.addArgument("length", CommandLineArgument.DataType.Integer);
 		parser.setDescription("length", "the length of the box");
