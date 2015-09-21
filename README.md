@@ -81,25 +81,25 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 
 	The following is an example of the displayed help text of a simple volume calculator:
 	
-	'''
-	C:\ArgumentParser>java VolCalc --help
+	'''  
+	C:\ArgumentParser>java VolCalc --help  
 	
-	usage: java VolCalc length width height
-	Calculates the volume of an object
+	usage: java VolCalc length width height  
+	Calculates the volume of an object  
 	
-	Positional Arguments:
-	length  integer the length of the box   restricted to: 7 4
-	width   float   the width of the box
-	height  integer the height of the box
+	Positional Arguments:  
+	length  integer the length of the box   restricted to: 7 4  
+	width   float   the width of the box  
+	height  integer the height of the box  
 	
 	Optional Arguments:
-	--help, -h      boolean
-	--type  string  Shape of object to be calculated       required        restricted to: sphere pyramid
-	--noisy boolean mutual group: 1
-	--verbose       boolean mutual group: 1
-	--quiet boolean mutual group: 2
-	--silent        boolean mutual group: 2
-	'''
+	--help, -h      boolean  
+	--type  string  Shape of object to be calculated       required        restricted to: sphere pyramid  
+	--noisy boolean mutual group: 1  
+	--verbose       boolean mutual group: 1  
+	--quiet boolean mutual group: 2  
+	--silent        boolean mutual group: 2  
+	'''  
 
 	When help is called on the volume calculator, the above information is listed
 	for all arguments, both positional and optional. Each are defined as in the program as with
@@ -126,7 +126,7 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	
 	Here is an example of setting a short name for an optional argument:
 	
-	'''
+	'''  
 	parser.setShortOption("type", "t");
 	
 	'''
@@ -139,9 +139,9 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	Some programs, such as the volume calculator used above, need a required optional
 	argument to perform its task. The volume calculator used in the help text above, for example,
 	requires the optional argument "--type" to be present so that it can know what shape
-	it is calculating the volume of. This is done by the setRequired() method.
+	it is calculating the volume of. This is done by the setRequired() method.  
 	
-	'''
+	'''  
 	parser.setRequired("type");
 	'''
 	
@@ -152,9 +152,9 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	listed values. If a value is parsed that is not in the restricted list, an
 	error is thrown and the help text is displayed showing the user the values
 	that are accepted. Multiple values can be set as the restricted values. These
-	values will need to be separated by commas.
+	values will need to be separated by commas.  
 	
-	'''
+	'''  
 	parser.setRestricted("length", 6, 4);
 	'''
 	
@@ -171,8 +171,8 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	the program is to call the XML parser and state the file name. 
 	Note: the file must be in the root directory for it to be read in.
 	
-	Here is an example on reading in an XML file:
-	'''
+	Here is an example on reading in an XML file:  
+	'''  
 	ArgumentParser parser = XMLParser.createArgumentParser("arguments.xml");
 	
 	'''
@@ -185,11 +185,11 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	to write the arguments and their attributes to an XML file. If the XML file
 	already exists it will be overwritten, and if it does not exist it will be
 	created with the specified name. The file is written in proper formal with
-	the tags included.
+	the tags included.  
 	
-	To save to a file:
+	To save to a file:  
 	
-	'''
+	'''  
 	XMLParser.saveXMLFile("filename.xml");
 	
 	'''
@@ -208,9 +208,9 @@ programs included are almost ready to you. In CMD, move to the location of the
 repository on your machine. Once there, use Gradle to build the repository.
 The files in the root folder, the folders need to remain, are optional and
 were left for examples on using the various features of the library. 
-The import used from a fresh copy of Argument Parser is:
-'''
+The import used from a fresh copy of Argument Parser is:  
+'''  
 import edu.jsu.mcis.*;
-'''
+'''  
 
 *[For help with Gradle, click here.](https://docs.gradle.org/current/userguide/userguide_single.html)
