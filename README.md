@@ -15,8 +15,7 @@ the user to make use of arguments entered from the command line. ArgumentParser 
 generate help and usage information when requested or when an input error
 occurs. Arguments and optional arguments can be either coded into the program 
 or read in through an XML file via our XMLParser, which is included. This 
-library provides the function of writing arguments defined in a program to an XML file. 
-The XML file is written in proper format automatically when the function is called. 
+XML parser also provides the function of writing arguments defined in a program to an XML file.  
 The goal of this library is to provide an easy and reliable source for any situation needing 
 to parse values from a command line in Java.
 
@@ -30,19 +29,19 @@ Throughout this project, I assisted with the programming and logic issues we fac
 my main contribution to this project was working on the acceptance tests, unit tests, creating
 and refactoring the test mains, creating the Javadoc API, and presenting our sprint reviews.
 
-The * **Javadoc API** * is located at /build/docs/javadoc/index.html 
+The **Javadoc API** is located at /build/docs/javadoc/index.html 
 
 
 ###Requirements
 ----------
 - A [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) is required
-- Gradle
+- [Gradle](https://gradle.org/gradle-download/)
 
 
 ###Tools
 ----------
 
-**The following are the tools used in creation of this library.**
+The following are the tools used in creation of this library.
 
 - **Gradle**: Build Tool
 - **Git**: Version Control Software
@@ -61,7 +60,7 @@ Implemented the Scrum methodology of Agile.
 
 1. **Ease of Use**
 
-	One of the goals of this library was to create an easy to use way to create
+	One of the goals of our team was to create an easy to use way to create
 	and define the arguments of a program. Creating the argument "length," for
 	example, would be done by calling a simple function "addArgument." 
 	*All of the functions are listed and documented in the API.*
@@ -70,7 +69,7 @@ Implemented the Scrum methodology of Agile.
 	
 	'''  
 	parser.addArgument("length", CommandLineArgument.DataType.Integer);  
-		parser.setDescription("length", "the length of the box");
+	parser.setDescription("length", "the length of the box");
 	
 	'''
 	
@@ -87,23 +86,23 @@ Implemented the Scrum methodology of Agile.
 	The following is an example of the displayed help text of a simple volume calculator:
 	
 	'''  
-	'C:\ArgumentParser>java VolCalc --help'  
+	C:\ArgumentParser>java VolCalc --help  
 	
-	'usage: java VolCalc length width height'  
-	'Calculates the volume of an object'  
+	usage: java VolCalc length width height  
+	Calculates the volume of an object  
 	
-	'Positional Arguments:'  
-	'length  integer the length of the box   restricted to: 7 4'  
-	'width   float   the width of the box'  
-	'height  integer the height of the box'  
+	Positional Arguments:  
+	length  integer the length of the box   restricted to: 7 4  
+	width   float   the width of the box  
+	height  integer the height of the box  
 	
-	'Optional Arguments:'
-	'--help, -h      boolean'  
-	'--type  string  Shape of object to be calculated       required        restricted to: sphere pyramid ' 
-	'--noisy boolean mutual group: 1'  
-	'--verbose       boolean mutual group: 1'  
-	'--quiet boolean mutual group: 2'  
-	'--silent        boolean mutual group: 2'  
+	Optional Arguments:
+	--help, -h      boolean  
+	--type  string  Shape of object to be calculated       required        restricted to: sphere pyramid  
+	--noisy boolean mutual group: 1  
+	--verbose       boolean mutual group: 1  
+	--quiet boolean mutual group: 2  
+	--silent        boolean mutual group: 2  
 	'''  
 
 	When help is called on the volume calculator, the above information is listed
@@ -140,8 +139,8 @@ Implemented the Scrum methodology of Agile.
 5. **Required Optional Arguments**
 
 	Some programs, such as the volume calculator used above, need a required optional
-	argument to perform its task. The volume calculator used in the help text above, for example,
-	requires the optional argument "--type" to be present so that it can know what shape
+	argument to perform its task. The volume calculator above, for example,
+	requires the optional argument "--type" to be present in order to know what shape
 	it is calculating the volume of. This is done by the setRequired() method.  
 	
 	'''  
@@ -149,7 +148,7 @@ Implemented the Scrum methodology of Agile.
 	
 	'''
 	
-	*ArgumentParser assumes that all positional arguments are required, and therefore do not need to be set as required.*
+	*ArgumentParser assumes that all positional arguments are required, and therefore they do not need to be set as required.*
 	
 6. **Restricted Values**
 
@@ -168,10 +167,10 @@ Implemented the Scrum methodology of Agile.
 7.  **Default Values**
 
 	Optional arguments can be defined to have a default value. This will enable
-	the program to run with an optional argument already in place, making it so
-	including the optional argument does not need to be included in the parsed
-	values. However, if the optional argument is set then the values are read in,
-	the default value is overwritten with the new value.
+	the program to run with an optional argument already in place. This makes it so
+	that an optional argument does not need to be declared then the program runs. However,  
+	if the optional argument is declared, then the values are read in and the default value is  
+	overwritten with the new value.
 	
 	
 8.  **XMLParser**
@@ -194,8 +193,8 @@ Implemented the Scrum methodology of Agile.
 	In addition to reading in arguments, XML parser gives the user the ability
 	to write the arguments and their attributes to an XML file. If the XML file
 	already exists it will be overwritten, and if it does not exist it will be
-	created with the specified name. The file is written in proper formal with
-	the tags included.  
+	created with the specified name. The file is automatically written in proper  
+	format with	the tags included.  
 	
 	To save to a file:  
 	
@@ -206,7 +205,7 @@ Implemented the Scrum methodology of Agile.
 	
 9.  **Javadoc API**
 
-	ArgumentParse comes with a documented javadoc API for the whole library. The
+	This library comes with a documented javadoc API for the whole library. The
 	API is located at /build/docs/javadoc/index.html
 
 
@@ -223,4 +222,4 @@ The import used from a fresh copy of Argument Parser is:
 import edu.jsu.mcis.*;
 '''  
 
-*[For help with Gradle, click here.](https://docs.gradle.org/current/userguide/userguide_single.html)
+*[Gradle User Guide](https://docs.gradle.org/current/userguide/userguide_single.html)
