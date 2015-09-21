@@ -7,8 +7,8 @@ Description: Command-Line Argument Parser for Java
 
 ---
 
-:#ArgumentParser:
-:==========:
+#ArgumentParser
+==============
 
 This group project provides a user-friendly command-line argument parser library that allows 
 the user to make use of arguments entered from the command line. ArgumentParser will 
@@ -54,7 +54,7 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 ###Methodology
 -----------
 
-For this project we used the Scrum methodology of Agile. 
+Implemented the Scrum methodology of Agile. 
 
 ###Features
 ----------
@@ -87,23 +87,23 @@ For this project we used the Scrum methodology of Agile.
 	The following is an example of the displayed help text of a simple volume calculator:
 	
 	'''  
-	C:\ArgumentParser>java VolCalc --help  
+	'C:\ArgumentParser>java VolCalc --help'  
 	
-	usage: java VolCalc length width height  
-	Calculates the volume of an object  
+	'usage: java VolCalc length width height'  
+	'Calculates the volume of an object'  
 	
-	Positional Arguments:  
-	length  integer the length of the box   restricted to: 7 4  
-	width   float   the width of the box  
-	height  integer the height of the box  
+	'Positional Arguments:'  
+	'length  integer the length of the box   restricted to: 7 4'  
+	'width   float   the width of the box'  
+	'height  integer the height of the box'  
 	
-	Optional Arguments:
-	--help, -h      boolean  
-	--type  string  Shape of object to be calculated       required        restricted to: sphere pyramid  
-	--noisy boolean mutual group: 1  
-	--verbose       boolean mutual group: 1  
-	--quiet boolean mutual group: 2  
-	--silent        boolean mutual group: 2  
+	'Optional Arguments:'
+	'--help, -h      boolean'  
+	'--type  string  Shape of object to be calculated       required        restricted to: sphere pyramid ' 
+	'--noisy boolean mutual group: 1'  
+	'--verbose       boolean mutual group: 1'  
+	'--quiet boolean mutual group: 2'  
+	'--silent        boolean mutual group: 2'  
 	'''  
 
 	When help is called on the volume calculator, the above information is listed
@@ -112,8 +112,6 @@ For this project we used the Scrum methodology of Agile.
 	read in, any restricted values, the data type, and if the argument is required. 
 	If help is called, it will stop the program and print the help text regardless
 	of any errors or lack thereof. 
-	
-	*ArgumentParser assumes that all positional arguments are required and therefore do not need to be set as required.*
 	
 	
 3. **Optional Arguments Can Be Read From Any Position**
@@ -147,9 +145,11 @@ For this project we used the Scrum methodology of Agile.
 	it is calculating the volume of. This is done by the setRequired() method.  
 	
 	'''  
-	parser.setRequired("type");
+	parser.setRequired("type");  
+	
 	'''
 	
+	*ArgumentParser assumes that all positional arguments are required, and therefore do not need to be set as required.*
 	
 6. **Restricted Values**
 
@@ -160,7 +160,8 @@ For this project we used the Scrum methodology of Agile.
 	values will need to be separated by commas.  
 	
 	'''  
-	parser.setRestricted("length", 6, 4);
+	parser.setRestricted("length", 6, 4);  
+	
 	'''
 	
 	
