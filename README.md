@@ -28,14 +28,14 @@ to parse values from a command line in Java.
 
 Throughout this project, I assisted with the programming and logic issues we faced as a team. However,
 my main contribution to this project was working on the acceptance tests, unit tests, creating
-and debugging the test mains, creating the Javadoc API, and presenting our sprint reviews.
+and refactoring the test mains, creating the Javadoc API, and presenting our sprint reviews.
 
 The * **Javadoc API** * is located at /build/docs/javadoc/index.html 
 
 
 ###Requirements
 ----------
-- A *[JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)* is required
+- A [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) is required
 - Gradle
 
 
@@ -51,6 +51,11 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 - **Javadoc**: For creating the ArgumentParser API
 
 
+###Methodology
+-----------
+
+For this project we used the Scrum methodology of Agile. 
+
 ###Features
 ----------
 
@@ -63,8 +68,8 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	
 	Example: 
 	
-	'''
-	parser.addArgument("length", CommandLineArgument.DataType.Integer);
+	'''  
+	parser.addArgument("length", CommandLineArgument.DataType.Integer);  
 		parser.setDescription("length", "the length of the box");
 	
 	'''
@@ -161,7 +166,11 @@ The * **Javadoc API** * is located at /build/docs/javadoc/index.html
 	
 7.  **Default Values**
 
-	Optional arguments can be defined to have a default value. 
+	Optional arguments can be defined to have a default value. This will enable
+	the program to run with an optional argument already in place, making it so
+	including the optional argument does not need to be included in the parsed
+	values. However, if the optional argument is set then the values are read in,
+	the default value is overwritten with the new value.
 	
 	
 8.  **XMLParser**
