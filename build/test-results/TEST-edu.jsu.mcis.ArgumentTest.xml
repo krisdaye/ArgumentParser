@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.ArgumentTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-09-20T19:17:20" hostname="Kris-PC" time="0.003">
+<testsuite name="edu.jsu.mcis.ArgumentTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-09-20T21:25:05" hostname="Kris-PC" time="0.002">
   <properties/>
-  <testcase name="testGetNumValues" classname="edu.jsu.mcis.ArgumentTest" time="0.001"/>
+  <testcase name="testGetNumValues" classname="edu.jsu.mcis.ArgumentTest" time="0.0"/>
   <testcase name="testGetShort" classname="edu.jsu.mcis.ArgumentTest" time="0.0"/>
   <testcase name="testArgumentToString" classname="edu.jsu.mcis.ArgumentTest" time="0.0"/>
   <testcase name="testOverloadedConstructor" classname="edu.jsu.mcis.ArgumentTest" time="0.0"/>
